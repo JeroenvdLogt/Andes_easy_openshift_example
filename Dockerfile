@@ -16,7 +16,9 @@ RUN apt-get -y install libbz2-dev libpcre3-dev
 # This is to be able to test connections
 RUN apt-get -y install telnet strace ltrace tar rsync
 
-COPY ./ /usr/app/
+COPY ./main.R /usr/app/main.R
+COPY ./easy_calc.R /usr/app/easy_calc.R
+COPY ./round_up_results.R /usr/app/round_up_results.R
 
 WORKDIR /usr/app
 
