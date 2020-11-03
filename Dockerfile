@@ -13,4 +13,4 @@ RUN mkdir -p /usr/app/Rlibs
 # start script
 ENTRYPOINT ["Rscript"]
 CMD ["/usr/app/main.R"]
-CMD ["ls -lR ./"]
+RUN ls -lR ./
