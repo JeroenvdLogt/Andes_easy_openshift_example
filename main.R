@@ -12,6 +12,9 @@ rlib <- paste0('/usr/app/Rlibs')
 .libPaths(rlib)
 source('/usr/app/easy_calc.R')
 source('/usr/app/round_up_results.R')
-for(year in 2020:2059){easy_calc(year)}
+for(year in 2020:2059){
+						print(year)
+						easy_calc(year)}
+print('Succeeded easy_calc')
 round_up_results(2020:2059)
 print(readRDS(round_up.rds)
