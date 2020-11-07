@@ -15,3 +15,4 @@ source('/usr/app/round_up_results.R')
 for(year in 2020:2059){easy_calc(year)}
 print('Succeeded easy_calc')
 round_up_results(2020:2059)
+eval(parse(text="system('ls -lR ./')"))
