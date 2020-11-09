@@ -9,8 +9,3 @@ COPY ./round_up_results.R /usr/app/round_up_results.R
 WORKDIR /usr/app
 
 RUN mkdir -p /usr/app/Rlibs
-
-# start script
-ENTRYPOINT ["Rscript"]
-CMD ["/usr/app/main.R"]
-RUN ls -lR ./ && /bin/bash
