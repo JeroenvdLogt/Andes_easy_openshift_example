@@ -22,6 +22,8 @@ WORKDIR /usr/app
 RUN mkdir -p /usr/app/Rlibs
 
 # Install the R library basic dependencies
-RUN Rscript /usr/ops/installVersionedDependencies.R NEXUSURL /usr/app/Rlibs && Rscript /usr/ops/installVersionedPackage.R NEXUSURL PROJECTNAME VERSION /usr/app/Rlibs FALSE && rm DESCRIPTION
+RUN Rscript /usr/ops/installVersionedDependencies.R NEXUSURL /usr/app/Rlibs
+RUN Rscript /usr/ops/installVersionedPackage.R NEXUSURL PROJECTNAME VERSION /usr/app/Rlibs FALSE
+RUN rm DESCRIPTION
 
 RUN mkdir -p /usr/app/Rlibs
