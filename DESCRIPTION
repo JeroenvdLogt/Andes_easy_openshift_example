@@ -1,0 +1,49 @@
+Package: PROJECTNAME
+Date: YYYY-MM-DD
+Version: 0.0.0.0
+Type: Package
+Title: Andes
+Author: Jacco Heres, Martijn van Braak
+Maintainer: Jacco Heres <jacco.heres@alliander.com>
+Description: Advanced Net Decision Support (andes) tries to estimate the impact of the energy transition on the full Liander electricity grid. This is done by bottom up modelling the current and future loads of all the customers and comparing the peak loads with the nominal capacities.
+SystemRequirements: C++14
+Depends:
+    R (>= 3.5.0)
+Imports: BH,
+    xgboost,
+    stringi,
+	plyr,
+	data.table,
+	reshape2,
+    slam,
+    ff,
+    fs,
+    xml2,
+    abind,
+    RJDBC,
+    RODBC (== 1.3-16),
+    rJava,
+    stringr,
+    stringi,
+    timeDate,
+    Rcpp,
+    alliander.common.r,
+    matrixStats,
+    igraph,
+    rjson,
+    plotrix,
+    inline,
+    devtools,
+    roxygen2,
+    futile.logger,
+    foreach,
+    doParallel,
+    mltools,
+    mailR,
+    openxlsx,
+    expm
+LinkingTo: Rcpp
+License: GPL-3
+Suggests:
+    testthat
+RoxygenNote: 7.1.1
