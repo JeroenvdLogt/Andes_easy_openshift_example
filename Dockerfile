@@ -15,7 +15,6 @@ RUN apt-get -y install libbz2-dev libpcre3-dev
 
 COPY ./DESCRIPTION /usr/app/DESCRIPTION
 COPY ./scripts /usr/ops
-COPY ./R usr/app/R
 COPY ./main.R /usr/app/main.R
 COPY ./easy_calc.R /usr/app/easy_calc.R
 COPY ./round_up_results.R /usr/app/round_up_results.R
